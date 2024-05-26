@@ -1,0 +1,629 @@
+
+
+/* Styling for the main container */
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Styling for the login and signup forms */
+.Login,
+.Signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Taille de la vue à 100% de la hauteur de l'écran */
+    background-position: center;
+    background-size: cover; /* Redimensionne l'image de fond pour qu'elle couvre toute la fenêtre */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2NHembQ-fDEWR0hg6E66SEX3AMnRS-HiAmw&s');
+}
+
+/* Style pour le formulaire de connexion */
+.login-form {
+    width: 300px; /* Largeur du formulaire */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre portée */
+}
+
+/* Style pour les champs de saisie */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style pour le bouton de connexion */
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour les liens de navigation */
+.login-form a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+
+form {
+    width: 100%;
+    max-width: 300px; /* Limiting form width */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input:focus {
+    border-color: #007bff; /* Border color on focus */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Blue button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.Inscription {
+    margin-top: 16px; /* Spacing from the login form */
+}
+
+.Inscription a {
+    color: #007bff; /* Blue color for the link */
+    text-decoration: none;
+}
+.Home.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .post {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post .images img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .post .contenu {
+    padding: 20px;
+  }
+  
+  .post h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .post button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post button:hover {
+    background-color: #0056b3;
+  }
+  
+
+.Inscription a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for the links */
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links > * {
+    margin-right: 20px; /* Spacing between each link */
+}
+
+.links > *:last-child {
+    margin-right: 0; /* No right margin for the last link */
+}
+
+
+.Inscription a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.links {
+    display: flex;
+}
+
+.links > * {
+    margin-right: 20px; /* Espace entre chaque lien */
+}
+
+.links > *:last-child {
+    margin-right: 0; /* Pas de marge à droite pour le dernier élément */
+}
+.Homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+  }
+  
+  .Homepage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Couleur de texte sombre */
+  }
+  
+  .Homepage p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #555; /* Couleur de texte légèrement plus foncée */
+  }
+  
+  /* Style pour les sections individuelles */
+  .Homepage section {
+    margin-bottom: 40px;
+  }
+  
+  /* Style pour le pied de page */
+  .Homepage footer {
+    margin-top: 40px;
+  }
+  /* Style pour la barre de navigation */
+.Homepage .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #007bff; /* Couleur de fond de la barre */
+    padding: 10px 0; /* Espacement intérieur de la barre */
+  }
+  
+  /* Style pour chaque lien dans la barre de navigation */
+  .Homepage .navbar a {
+    color: #fff; /* Couleur du texte des liens */
+    text-decoration: none; /* Suppression du soulignement des liens */
+    padding: 10px 20px; /* Espacement intérieur des liens */
+    margin: 0 10px; /* Marge entre les liens */
+    border-radius: 5px; /* Bordure arrondie pour les liens */
+    transition: background-color 0.3s; /* Transition fluide de la couleur de fond */
+  }
+  
+  /* Style pour les liens au survol */
+  .Homepage .navbar a:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+  }
+/* Footer styles */
+.footer a {
+    color: #4b5563; /* Légèrement plus foncé */
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Ajout d'une transition de couleur */
+}
+
+.footer a:hover {
+    color: #1e40af; /* Couleur de surbrillance lors du survol */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+    margin-left: 300px;
+}
+
+body {
+    background-color: #eee6e6; /* Fond noir */
+    color: #0a0909; /* Couleur du texte blanc */
+}
+
+.header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-item a:hover {
+    color: #1e40af; /* Couleur de surbrillance lors du survol */
+  }
+  .pages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   background-image:url("https://img.freepik.com/vecteurs-libre/abstrait-arriere-plan-bleu-vecteur-points-connectes-chaotically-polygones-volant-dans-espace-debris-volants-carte-style-technologique-futuriste-lignes-points-cercles-avions-conception-futuriste_1217-654.jpg?t=st=1713913558~exp=1713917158~hmac=708b8f7b982e1be90a99ab2d0ac13da42cc8d5d3b8554ccfc596170ce611b8a9&w=740"); /* Remplacez "chemin/vers/votre/image.jpg" par le chemin de votre image de fond */
+    background-size: cover;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour rendre le formulaire plus lisible */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre pour donner du relief */
+   background-image: url("https://images.app.goo.gl/h5MtiJri2G9fgpWN7");
+}
+
+.form-container h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    font-size: 1.2rem;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333; /* Bordure sous les champs de formulaire */
+    background-color: transparent; /* Fond transparent pour s'adapter à l'arrière-plan */
+    transition: border-color 0.3s ease; /* Animation de transition pour la bordure */
+}
+
+.form-container input:focus {
+    border-color: #666; /* Changement de couleur de la bordure lorsque le champ est en focus */
+    outline: none; /* Supprime la bordure de focus par défaut */
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animation de transition pour la couleur de fond */
+}
+
+.form-container button:hover {
+    background-color: #555; /* Changement de couleur de fond au survol */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    width: 300px;
+    gap:20px;
+
+    
+    
+}
+
+.links a {
+    color: rgb(206, 38, 38);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.extras {
+    margin-left: auto;
+}
+
+.extras ul {
+    list-style: none;
+    padding: 0;
+}
+
+.extras li {
+    margin-bottom: 10px;
+}
+
+/* Vous pouvez ajouter plus de styles selon vos besoins */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo,
+.links,
+.additional-info {
+    flex: 1;
+}
+
+.logo img {
+    width: 50px; /* Ajustez la taille de l'image selon vos besoins */
+    margin-bottom: 10px;
+}
+
+.links p,
+.additional-info p {
+    margin: 0;
+}
+
+/* Styles supplémentaires selon vos besoins */
+
+
+/* Styles supplémentaires selon vos besoins */
+/* Global styles */
+.pages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/vecteurs-libre/abstrait-arriere-plan-bleu-vecteur-points-connectes-chaotically-polygones-volant-dans-espace-debris-volants-carte-style-technologique-futuriste-lignes-points-cercles-avions-conception-futuriste_1217-654.jpg?t=st=1713913558~exp=1713917158~hmac=708b8f7b982e1be90a99ab2d0ac13da42cc8d5d3b8554ccfc596170ce611b8a9&w=740");
+  background-size: cover;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  font-size: 1.2rem;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #666;
+  outline: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #555;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo img {
+  width: 300px;
+  gap: 20px;
+}
+
+.links a {
+  color: rgb(206, 38, 38);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.extras {
+  margin-left: auto;
+}
+
+.extras ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extras li {
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo,
+.links,
+.additional-info {
+  flex: 1;
+}
+
+.logo img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.links p,
+.additional-info p {
+  margin: 0;
+}
+
+/* Post styles */
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-image: url("https://img.freepik.com/photos-gratuite/paysage-palmiers-3d-contre-ciel-coucher-soleil_1048-18610.jpg?t=st=1713914448~exp=1713918048~hmac=72af64209838d2cbc4235215744af03031682b908692ffbaafd4abe603c8a805&w=740");
+}
+
+.post {
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #f9f9f96e;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
